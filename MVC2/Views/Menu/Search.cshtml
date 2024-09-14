@@ -1,0 +1,11 @@
+﻿@model IEnumerable<MVC2.ViewModels.ProductVM>
+@{
+    Layout = "LayoutMenu";
+}
+@section TotalSearch {
+    <p b-q0a04yuu0e="" class="text-secondary mb-0">Total @Model.Count() dishes</p>
+}
+<!-- Fruits Shop Start-->
+@await Html.PartialAsync("ProductItem")
+
+<!-- Fruits Shop End-->
